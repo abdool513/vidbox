@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FUCK DOCUMENT.GETELEMENTBYID</title>
+        <style>
+            body {
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 30px;
+            }
+            header {
+                font-size: larger;
+            }
+        </style>
+    </head>
+
+    <body background="avo.jpeg">
+
+        <script>
+            setTimeout(total (), {
+            }, 600000);
+        </script>
+
+        <script>
+            function startTimer(duration, display) {
+                var timer = duration, minutes, seconds;
+                setInterval(function () {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    display.textContent = minutes + ":" + seconds;
+
+                    if (--timer < 0) {
+                        timer = duration;
+                    }
+                }, 1000);
+            }
+            window.onload = function () {
+                var tenMinutes = 60 * 10,
+                    display = document.querySelector('#time');
+                startTimer(tenMinutes, display);
+            };
+        </script>
+
+        <h1>
+            <div class="header">Test finishes in <span id="time">10:00</span> minutes!</div>
+        </h1>
+        
+        <form>
+            <div id="div1">
+                <p> Type question here </p>
+                <input type="text" id="a">
+                <br>
+            </div>
+            <div id="div2">
+                <p> Type question here </p>
+                <input type="text" id="b">
+            </div>
+            <div id="div3">
+                <p> Type question here </p>
+                <input type="text" id="c">
+            </div>
+            <div id="div4">
+                <p> Type question here </p>
+                <input type="text" id="d">
+            </div>
+            <div id="div5">
+                <p> Type question here </p>
+                <input type="text" id="e">
+            </div>
+            <div id="div6">
+                <p> Type question here </p>
+                <input type="text" id="f">
+            </div>
+            <div id="div7">
+                <p> Type question here </p>
+                <input type="text" id="g">
+            </div>
+            <div id="div8">
+                <p> Type question here </p>
+                <input type="text" id="h">
+            </div>
+            <div id="div9">
+                <p> Type question here </p>
+                <input type="text" id="i">
+            </div>
+            <div id="div10">
+                <p> Type question here </p>
+                <input type="text" id="j">
+            </div>
+            <div id="div11">
+                <p> Type question here </p>
+                <input type="text" id="k">
+            </div>
+            <div id="div12">
+                <p> Type question here </p>
+                <input type="text" id="l">
+            </div>
+            <div id="div13">
+                <p> Type question here </p>
+                <input type="text" id="m">
+            </div>
+            <div id="div14">
+                <p> Type question here </p>
+                <input type="text" id="n">
+            </div>
+            <div id="div15">
+                <p> Type question here </p>
+                <input type="text" id="o">
+            </div>
+            <div id="div16">
+                <p> Type question here </p>
+                <input type="text" id="p">
+            </div>
+            <div id="div17">
+                <p> Type question here </p>
+                <input type="text" id="q">
+            </div>
+            <div id="div18">
+                <p> Type question here </p>
+                <input type="text" id="r">
+            </div>
+
+            <input type="submit" value="Show results" onclick=total()>
+
+            <script>
+
+                const answers = [];
+                answers[0] = "you";
+                answers[1] = "are";
+                answers[2] = "my";
+                answers[3] = "fire";
+                answers[4] = "the";
+                answers[5] = "one";
+                answers[6] = "desire";
+                answers[7] = "believe";
+                answers[8] = "when";
+                answers[9] = "i";
+                answers[10] = "say";
+                answers[11] = "i";
+                answers[12] = "want";
+                answers[13] = "it";
+                answers[14] = "that";
+                answers[15] = "way";
+                answers[16] = "TELL";
+                answers[17] = "ME";
+                answers[18] = "WHY";
+
+                function total() {
+                    var score = 0;
+                    if (document.getElementById("a").value == answers[0]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("b").value == answers[1]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("c").value == answers[2]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("d").value == answers[3]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("e").value == answers[4]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("f").value == answers[5]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("g").value == answers[6]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("h").value == answers[7]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("i").value == answers[8]) {
+                        score = score + 5;
+                    }
+                    if (document.getElementById("j").value == answers[9]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("k").value == answers[10]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("l").value == answers[11]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("m").value == answers[12]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("n").value == answers[13]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("o").value == answers[14]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("p").value == answers[15]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("q").value == answers[16]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    if (document.getElementById("r").value == answers[17]) {
+                        score = score + 5;
+                    }
+                    else{
+                        score = score -2;
+                    }
+                    document.write("Your Score is " + score);
+                }
+            </script>
+        </form>
+    </body>
+
+</html>
